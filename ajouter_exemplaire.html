@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-mobile.css" />
+    <link rel="stylesheet" href="assets/css/style-desktop.css">
+    <link rel="stylesheet" href="assets\css\style-header&container.css">
+    <link rel="stylesheet" href="assets/css/style-exemplaire.css">
+
+
+    <title>BDthèque des Marmusots par les plus stylées de toute la promo</title>
+</head>
+<body>
+    <!-- Placeholder header -->
+
+    <div class="container">
+        <div  class="visible" id="divform" >
+                <fieldset class="form">
+                    <legend for="form">Ajouter une BD</legend>
+                    <div id="rechercheExemplaire">
+                        <label for="isbnAddExemplaire">ISBN</label>
+                        <input type="text" id="isbnAddExemplaire" placeholder="XXX-X-XXXX-XXXX-X">
+                        <button id="ValiderRechercheExemplaire" class="visible">Valider</button>
+                        <p class="invisible">ISBN non existant. Renseignez la nouvelle BD</p>
+                        <p class="invisible">ISBN existant. Renseignez le nouvel exemplaire.</p>
+                    </div>
+                    <hr>
+                    <div class="visible">
+                        <table>
+                            <tr id="alerte" class="invisible"></tr>
+                            <tr>
+                                <th>
+                                    <div id="ajoutBD" class="visible" >
+                                        <div>
+                                            <label for="codeBD">Code exemplaire :</label>
+                                            <input type="text" name="codeBD" id="codeBD" placeholder="00000" pattern="/^[0-9]{4,6}$/">
+                                        </div>
+    
+                                        <br>
+    
+                                        <div>
+                                            <label for="titreBD">Titre :</label>
+                                            <input type="text" id="titreBD">
+                                        </div>
+    
+                                        <br/>
+    
+                                        <div>
+                                            <label for="auteurBD">Auteur :</label>
+                                            <select name="auteurBD">
+                                                <option value="selectAuteur" selected>Sélectionner un auteur :</option>
+                                                <option value="auteur">auteur</option>
+                                                <option value="auteur">auteur</option>
+                                                <option value="auteur">auteur</option>
+                                                <option value="auteur">auteur</option>
+                                            </select>
+                                        </div>
+    
+                                        <br/>
+                                        <div>
+                                            <label for="serieBD">Série :</label>
+                                            <select name="serieBD" >
+                                                <option value="selectSerie" selected>Sélectionner une série</option>
+                                                <option value="serie">série</option>
+                                                <option value="serie">série</option>
+                                                <option value="serie">série</option>
+                                                <option value="serie">série</option>
+                                            </select>
+                                        </div>
+    
+                                        <br>
+                                        <div>
+                                            <label for="etatBD">État :</label>
+                                            <select name="etatBD">
+                                                <option value="selectEtat">Sélectionner un état</option>
+                                                <option value="neuf">Neuf</option>
+                                                <option value="abime">Abîmé</option>
+                                            </select>
+                                        </div>
+    
+                                        <br>
+                                        <div>
+                                            <label for="commentaireBD">Commentaires :</label>
+                                            <textarea name="commentaireBD" cols="30" rows="10"></textarea>
+                                        </div>
+    
+                                        <br>
+                                        <div>
+                                            <label for="emplacementBD">Emplacement :</label>
+                                            <select name="emplacementBD">
+                                                <option value="selectEmplacement" selected>Sélectionner un emplacement :</option>
+                                                <option value="emplacement">E00</option>
+                                            </select>
+                                        </div>
+    
+                                        <br>
+                                        <div>
+                                            <label for="imageBD">Ajouter une image :</label>
+                                            <input type="file" name="imageBD" accept="image/png, image/jpeg">
+                                        </div>
+    
+                                        <br>
+                                        <div>
+                                            <label for="resumeBD">Résumé :</label>
+                                            <textarea name="resumeBD" cols="30" rows="10"></textarea>
+                                        </div>
+    
+                                        <br>
+                                    </div>
+                                    <div id="ajoutExemplaire" class="invisible" >
+                                        <div>
+                                            <label for="codeExemplaire">Code exemplaire :</label>
+                                            <input type="text" name="codeBD" id="codeBD" placeholder="00000" pattern="/^[0-9]{4,6}$/">
+                                        </div>  
+                                            
+                                        <br>
+
+                                        <div>
+                                            <label for="etatExemplaire">État :</label>
+                                            <select name="etatExemplaire">
+                                                <option value="selectEtat">Sélectionner un état</option>
+                                                <option value="neuf">Neuf</option>
+                                                <option value="abime">Abîmé</option>
+                                            </select>
+                                        </div>
+
+                                        <br>
+
+                                        <div>
+                                            <label for="commentaireExemplaire">Commentaires :</label>
+                                            <textarea name="commentaireExemplaire" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <label for="emplacementExemplaire">Emplacement :</label>
+                                            <select name="emplacementExemplaire">
+                                                <option value="selectEmplacement" selected>Sélectionner un emplacement :</option>
+                                                <option value="emplacement">E00</option>
+                                            </select>
+                                        </div>                                        
+                                    </div>
+                                </th>
+                                <th id="th2">
+                                    <h2>Aperçu</h2>
+                                    <br>
+                                    <div id="imgBD"></div>
+                                </th>
+                                
+                            </tr>
+                        </table>
+                       
+                        <div id="btns">
+                            <button id="adandon">Abandonner</button>
+                            <button id="submit">Valider</button>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+
+
+            
+        </div>
+        
+    </div>
+    <footer>
+        <p>Manon et Amandine, les BG - 2021</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/script/script-header-exemplaire.js"></script>
+</body>
+</html>

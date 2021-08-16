@@ -10,82 +10,63 @@
     <title>BDthèque des Marmusots par les plus stylées de toute la promo</title>
 </head>
 <body>
-    <header>
-        <div id="main-menu">
-            <select name="fond" id="fond" class="visible">
-                <option value="Catalogue" disabled selected>Catalogue</option>
-            </select>
-            <select name="nav-main" id="nav-main" class="visible">
-                <option value="Gestion adhérents" disabled selected>Gestion adhérents</option>
-                <option value="Nouvel adhérent">Nouvel adhérent</option>
-                <option value="Gestion compte">Gestion compte</option>
-            </select>
-        </div>
-        <button id="retour" class="invisible">Retour</button>
-        <h1 class="visible">Centre culturel des Marmusots</h1>
-        <div id="compte">
-            <p id="identification" class="visible">Bonjour Testitest !</p>      <!--Attention enlever Testitest-->
-            <select name="nav" id="nav" class="invisible">
-                <option value="" disabled selected>Mon compte</option>
-                <option value="mafiche">Ma fiche adhérent</option>
-                <option value="logout">Se déconnecter</option>
-            </select>
-            <button id="connexion" class="invisible">Se connecter</button>
-        </div>
-    </header>
 
-    <container>
+    <!-- Placeholder header -->
+
+    <div class="container">
         <div id="divform">
-        <fieldset class="form"><legend for="form">Créer un nouvel adhérent</legend>
-            <table>
-                <tr id="alerte" class="invisible"></tr>
-                <tr>
-                    <th class="label">Identité</th>
-                    <th class="identite">
-                        <label for="nomadherent">Nom</label><br/>
-                        <input type="text" id="nomadherent" placeholder="Veuillez renseigner un nom" required><br/>
-                        <label for="prenomadherent">Prénom</label><br/>
-                        <input type="text" id="prenomadherent" placeholder="Veuillez renseigner un prénom" required>
-                    </th>
-                </tr>
-                <tr>
-                    <th class="label">Adresse</th>
-                    <th id="adresseadherent">
-                        <label for="numero">N°</label><br/>
-                        <input type="text"id="numero" placeholder="00"><br/>
-                        <label for="rue">Nom de rue</label><br/>
-                        <input type="text"id="rue" placeholder="Veuillez renseigner un nom de rue"><br/>
-                        <label for="code">Code postal</label><br/>
-                        <input type="text"id="code" placeholder="00000"><br/>
-                        <label for="ville">Ville</label><br/>
-                        <input type="text"id="ville" placeholder="Veuillez renseigner une ville">
-                    </th>
-                </tr>
-                <tr>
-                    <th class="label">Date de règlement de la cotisation annuelle</th>
-                    <th id="datecot"><input type="date" value=""></th>
-                </tr>
-                <tr>
-                    <th class="label invisible">Emprunts en cours</th>
-                    <th id="emprunt" class="invisible"></th>
-                </tr>
-                <tr>
-                    <th class="label invisible">Amendes</th>
-                    <th id="amende" class="invisible"></th>
-                </tr>
-            </table>
-            <div id="btns">
-                <button id="adandon">Abandonner</button>
-                <button id="submit">Valider</button>
-            </div>
-        </fieldset>
+            <fieldset class="form"><legend for="form">Créer un nouvel adhérent</legend>
+                <table>
+                    <tr id="alerte" class="invisible"></tr>
+                    <tr>
+                        <th class="label">Identité</th>
+                        <th class="identite">
+                            <label for="nomadherent">Nom</label><br/>
+                            <input type="text" class="nomadherent" placeholder="Veuillez renseigner un nom" required><br/>
+                            <label for="prenomadherent">Prénom</label><br/>
+                            <input type="text" class="prenomadherent" placeholder="Veuillez renseigner un prénom" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="label">Adresse</th>
+                        <th id="adresseadherent">
+                            <label for="numero">N°</label><br/>
+                            <input type="text"id="numero" placeholder="00"><br/>
+                            <label for="rue">Nom de rue</label><br/>
+                            <input type="text"id="rue" placeholder="Veuillez renseigner un nom de rue"><br/>
+                            <label for="code">Code postal</label><br/>
+                            <input type="text"id="code" placeholder="00000"><br/>
+                            <label for="ville">Ville</label><br/>
+                            <input type="text"id="ville" placeholder="Veuillez renseigner une ville">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="label">Date de règlement de la cotisation annuelle</th>
+                        <th id="datecot"><input type="date" value=""></th>
+                    </tr>
+                    <tr>
+                        <th class="label invisible">Emprunts en cours</th>
+                        <th id="emprunt" class="invisible"></th>
+                    </tr>
+                    <tr>
+                        <th class="label invisible">Amendes</th>
+                        <th id="amende" class="invisible"></th>
+                    </tr>
+                </table>
+                <div id="btns">
+                    <button id="adandon">Abandonner</button>
+                    <button id="submit">Valider</button>
+                </div>
+            </fieldset>
+        </div>
     </div>
-    </container>
     <footer>
         <p>Manon et Amandine, les BG - 2021</p>
     </footer>
 
 
-    <script src="assets/script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/script/script-header-adherent.js"></script>
+
 </body>
 </html>

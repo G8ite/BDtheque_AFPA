@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-mobile.css" />
+    <link rel="stylesheet" href="assets/css/style-desktop.css">
+    <link rel="stylesheet" href="assets\css\style-header&container.css">
+    <title>BDthèque des Marmusots par les plus stylées de toute la promo</title>
+</head>
+<body>
+    <!-- Placeholder header -->
+     
+    <div class="container">
+        <div id="divform">
+            <fieldset class="form"><legend for="form">Rechercher un adhérent</legend>
+                <div id="recherche">
+                <table>
+                    <tr>
+                        <th class="label">Rechercher par nom et/ou prénom</th>
+                    </tr>
+                    <tr>
+                        <th class="identite">
+                            <label for="nomadherent">Nom</label><br/>
+                            <input type="text" class="nomadherent" placeholder="Nom ou partie du nom"><br/>
+                            <label for="prenomadherent">Prénom</label><br/>
+                            <input type="text" class="prenomadherent" placeholder="Prénom ou partie du prénom">
+                        </th>
+                    </tr>
+                </table>
+                <button id="rechercher">Rechercher</button>
+                </div>
+                <hr>
+                <div id="results">
+                    <p>Aucun résultat</p>
+                </div>
+                <div id="btns">
+                    <button id="adandon">Abandonner</button>
+                    <button id="submit" class="invisible">Valider</button>
+                </div>
+            </fieldset>
+        </div>
+
+    </div>
+    <footer>
+        <p>Manon et Amandine, les BG - 2021</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/script/script-header-adhérent.js"></script>
+</body>
+</html>

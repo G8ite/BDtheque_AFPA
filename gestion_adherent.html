@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-mobile.css" />
+    <link rel="stylesheet" href="assets/css/style-desktop.css">
+    <link rel="stylesheet" href="assets\css\style-header&container.css">
+    <title>BDthèque des Marmusots par les plus stylées de toute la promo</title>
+</head>
+<body>
+    <!-- Placeholder header -->
+
+    <div class="container">
+        <div id="divform">
+            <fieldset class="form"><legend for="form">Gestion adhérent</legend>
+                <p>Adhérent</p>
+                <p id="adherent"></p>
+                <button id="fiche">Voir fiche</button>
+                <hr>
+                <div id="emprunt">
+                    <title>Renseigner un emprunt</title>
+                    <p id="alertemprunt"></p>
+                    <label>Code article 1</label><input type="text"/><button id="valider">Valider</button><br/>
+                    <label>Code article 2</label><input type="text"/><button id="valider">Valider</button><br/>
+                    <label>Code article 3</label><input type="text"/><button id="valider">Valider</button><br/>
+                </div>
+                <div id="retour">
+                    <title>Renseigner un retour</title>
+                    <p id="dateemprunt"></p>
+                    <p id="retour1"></p><button id="etat">Modifier état</button><button id="perdu">Perdu</button><button id="OK">OK</button>
+                    <p id="retour2"></p><button id="etat">Modifier état</button><button id="perdu">Perdu</button><button id="OK">OK</button>
+                    <p id="retour3"></p><button id="etat">Modifier état</button><button id="perdu">Perdu</button><button id="OK">OK</button>
+                </div>
+                <div id="btns">
+                    <button id="adandon">Abandonner</button>
+                    <button id="submit">Enregistrer</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <footer>
+        <p>Manon et Amandine, les BG - 2021</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/script/script-header-adhérent.js"></script>
+</body>
+</html>

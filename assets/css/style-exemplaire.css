@@ -1,0 +1,53 @@
+/* RECHERCHE */
+#rechercheExemplaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#rechercheExemplaire input {
+    width: 300px;
+    height: 20px;
+}
+#rechercheExemplaire p {
+    color: red;
+}
+/* FORMULAIRE */
+
+select{
+    height: 20px;
+    padding: 0px;
+    font-size: 1.1em;
+    width: 180px;
+}
+#imgBD{
+    background-color: white;
+    width: 200px;
+    height: 300px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+#codeBD, #codeExemplaire {
+    width: 30px;
+}
+#titreBD {
+    width: 200px;
+}
+
+/* COLONNE 2 DU FORMULAIRE POSITION DE L'IMGA DE COUVERTURE DE LA BD */
+
+#th2 {
+     /* border: 1px solid black;  */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#th2 h2 {
+    font-size: 1.2em;
+}

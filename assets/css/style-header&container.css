@@ -1,23 +1,25 @@
 header {
-    height: 200px;
+
+    height: 190px;
     box-shadow: 3px 3px 10px -2px #968566;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
 h1 {
     font-size: 3em;
-    display: flex;
     text-align: center;
+    padding-top: 80px;
+}
+
+#main-menu {
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
 #retour {
-    width: 90px;
-
     position: absolute;
     top: 20px;
     left: 20px;
@@ -63,35 +65,21 @@ option[disabled] {
     display: none;
 }
 
-#main-menu {
-    position: absolute;
-    left: 0;
-    top: 170px;
-}
-
 #main-menu>select {
     border-radius: 8px 8px 0px 0px;
-    width: 170px;
+
 }
 
 #fond {
     -webkit-appearance: none;
 }
 
-container {
-    display: flex;
-    justify-content: center;
-}
-
 #divform {
-    background-color: rgba(129, 147, 148, 0.3);
+    background-color: rgba(185, 172, 141, 0.719);
     box-shadow: 3px 3px 10px -2px #968566;
     border-radius: 8px;
-    margin: 5%;
+    margin: 20px;
     padding: 1.5%;
-    width:80%;
-    display: flex;
-    justify-content: center;
 }
 
 .form {
@@ -99,11 +87,11 @@ container {
     padding: 3%;
     border-color: #dde4ed;
     border: solid 1px;
-    width: 100%;
 }
 
 table {
-    margin: 0 5% 0 5% ;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 legend {
@@ -112,11 +100,11 @@ legend {
 }
 
 th {
-    padding: 5%;
+    padding: 20px 0px 20px 0px;
     text-align: start;
     font-weight: unset;
     font-size: 1.5em;
-    width: 50%;
+    width: 400px;
 }
 
 #alerte {
@@ -130,7 +118,7 @@ th>input {
     border: 0; 
     padding: 7px 0; 
     border-bottom: 1px solid #151219;
-    background-color: rgba(129, 147, 148, 0.7);
+    background-color: rgba(150, 133, 102, 0.445);
 }
 
 th>input::placeholder {
@@ -139,6 +127,9 @@ th>input::placeholder {
 
 .label {
     font-weight: bold;
+    padding: 25px;
+    vertical-align: text-top;
+    text-align: center;
 }
 
 #btns {
@@ -146,6 +137,27 @@ th>input::placeholder {
     justify-content: space-between;
 }
 
-#submit {
-    width: 90px;
+
+#recherche {
+    text-align: center;
+}
+
+#rechercher {
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#abandon {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#results {
+    min-height: 100px;
+    text-align: center;
 }
